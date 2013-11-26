@@ -1,0 +1,13 @@
+@(userForm: Form[User])
+@import helper._
+@main("entry user") {
+	<h1>Entry user</h1>
+	@helper.form(action = routes.UserController.entrySubmit) {
+		<fieldset>
+			<legend>input user info.</legend>
+			@helper.inputText(userForm("name"))
+			@helper.inputText(userForm("email"))
+		</fieldset>
+		<input type="submit" value="entry">
+	}
+}

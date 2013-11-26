@@ -1,0 +1,26 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+
+# Map static resources from the /public folder to the /assets URL path
+GET	/sample1		    controllers.SampleController.sample1
+GET	/sample2		    controllers.SampleController.sample2
+GET	/sample3/:id		    controllers.SampleController.sample3(id:Long)
+GET	/sample5		    controllers.SampleController.sample5(fixedValue="fixed")
+GET	/sample6		    controllers.SampleController.sample6(defaultValue:Int ?= 1)
+GET	/sample7		    controllers.SampleController.sample7(optValue:Option[String])
+GET	/saveSession		    controllers.SessionController.setSession
+GET	/readSession		    controllers.SessionController.getSession
+GET	/saveFlash		    controllers.SessionController.setFlash
+GET	/readFlash		    controllers.SessionController.getFlash
+GET	/show			    controllers.TemplateController.show()
+GET	/user/entry		    controllers.UserController.entryInit
+POST	/user/entry		    controllers.UserController.entrySubmit
+GET	/simpleJson		    controllers.JsonController.simpleJson()
+GET	/coffeeSample		    controllers.CoffeeController.index()
+GET	/asyncSample		    controllers.AsyncController.index()
+GET	/jsSample		    controllers.JsController.index()
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
