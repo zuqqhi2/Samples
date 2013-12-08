@@ -1,7 +1,7 @@
 from PIL import Image
 from pylab import *
 
-im = array(Image.open('empire.jpg').convert('L'))
+im = array(Image.open('source/empire.jpg').convert('L'))
 
 figure()
 

@@ -69,13 +69,17 @@ def plot_harris_points(image, filtered_coords):
     axis('off')
     show()
 
-im = array(Image.open('empire.jpg').convert('L'))
+im = array(Image.open('source/empire.jpg').convert('L'))
 harrisim = compute_harris_response(im)
 filtered_coords = get_harris_points(harrisim, 6, 0.1)
 #plot_harris_points(im, filtered_coords)
 
-imsave('harris-original.pdf', im)
-imsave('harris-response.pdf', harrisim)
+pil_im = Image.fromarray(uint8(im))
+pil_im.save('dest/harris-original.jpg')
+imsave('dest/harris-original.pdf', im)
+pil_harrisim = Image.fromarray(uint8(harrisim))
+pil_harrisim.save('dest/harris-response.jpg')
+imsave('dest/harris-response.pdf', harrisim)
 
 for p in filtered_coords:
     for idxY in range(3):
@@ -88,4 +92,6 @@ for p in filtered_coords:
             x = idxX - 1
             im[p[0]+x,p[1]+y] = 0
 
-imsave('harris.pdf', im)
+pil_im = Image.fromarray(uint8(im))
+pil_im.save('dest/harris.jpg')
+imsave('dest/harris.pdf', im)
