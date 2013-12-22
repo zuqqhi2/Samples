@@ -45,7 +45,8 @@ while diff > 0.1:
   
   # M-step
   N_k = np.array([sum(gamma_nk[:,k]) for k in range(K)])
-  pi_k = N_k/sum(N_k)
+  #pi_k = N_k/sum(N_k)
+  pi_k = N_k / len(data)
   mu = np.dot(gamma_nk.T, data)/N_k
   for k in range(K):
     sig = np.zeros((2,2))
