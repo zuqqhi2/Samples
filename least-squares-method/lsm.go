@@ -104,7 +104,8 @@ func main() {
   if err != nil {
     panic(err)
   }
-  p.Title.Text = "Least Square Method"
+  p.Title.Text = "Plotinum Sample"
+  //p.Title.Text = "Least Square Method"
   p.X.Label.Text = "X"
   p.Y.Label.Text = "Y"
   p.Add(plotter.NewGrid())
@@ -121,10 +122,10 @@ func main() {
   
   // Add data and legend
   p.Add(lpPoints)
-  p.Legend.Add("answer", lpPoints)
+  p.Legend.Add("observed points", lpPoints)
   
   // Save the plot to a PNG file.
-  if err := p.Save(4, 4, "points.png"); err != nil {
+  if err := p.Save(4, 4, "points2.png"); err != nil {
     panic(err)
   }
 
