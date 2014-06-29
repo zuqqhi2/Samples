@@ -44,22 +44,24 @@ func main() {
   if err != nil {
     panic(err)
   }
-
   p.Title.Text = "Least Square Method"
   p.X.Label.Text = "X"
   p.Y.Label.Text = "Y"
   p.Add(plotter.NewGrid())
 
   // Make a scatter plotter and set its style
-  s, err := plotter.NewScatter(answer)
+  // Make a line plotter with points and set its style.
+  lpLine, lpPoints, err := plotter.NewLinePoints(answer)
   if err != nil {
     panic(err)
   }
-  s.GlyphStyle.Color = color.RGBA{R: 255, A: 255}
+  lpLine.Color = color.RGBA{G: 255, A: 255}
+  lpPoints.Shape = plot.PyramidGlyph{}
+  lpPoints.Color = color.RGBA{R: 255, A: 255}
   
   // Add data and legend
-  p.Add(s)
-  p.Legend.Add("answer", s)
+  p.Add(lpLine, lpPoints)
+  p.Legend.Add("answer", lpLine, lpPoints)
   
   // Save the plot to a PNG file.
   if err := p.Save(4, 4, "points3.png"); err != nil {
