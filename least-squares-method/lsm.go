@@ -55,7 +55,7 @@ func main() {
   if err != nil {
     panic(err)
   }
-  s.GlyphStyle.Color = color.RGBA{R: 255, A: 255}
+  s.GlyphStyle.Color = color.RGBA{R: 255}
   
   p.Legend.Add("answer", s)
   
