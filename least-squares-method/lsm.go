@@ -7,6 +7,7 @@ import (
   "image/color"
   "math/rand"
   "math"
+  //"fmt"
 )
 
 func linspace(start, end float64, n int, x plotter.XYs) {
@@ -54,7 +55,7 @@ func main() {
   if err != nil {
     panic(err)
   }
-  s.GlyphStyle.Color = color.RGBA{R: 255, B: 128, A: 255}
+  s.GlyphStyle.Color = color.RGBA{R: 255, A: 255}
   
   p.Legend.Add("answer", s)
   
