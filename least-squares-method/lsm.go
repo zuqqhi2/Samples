@@ -62,7 +62,7 @@ func main() {
   p.Legend.Add("answer", s)
   
   // Save the plot to a PNG file.
-  if err := p.Save(4, 4, "points2.png"); err != nil {
+  if err := p.Save(4, 4, "points3.png"); err != nil {
     panic(err)
   }
 
