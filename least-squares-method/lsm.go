@@ -61,7 +61,7 @@ func main() {
         p.Legend.Add("line points", lpLine, lpPoints)
 
         // Save the plot to a PNG file.
-        if err := p.Save(4, 4, "points.png"); err != nil {
+        if err := p.Save(4, 4, "points2.png"); err != nil {
                 panic(err)
         }
 }
