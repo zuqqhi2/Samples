@@ -51,12 +51,14 @@ func main() {
   p.Add(plotter.NewGrid())
 
   // Make a scatter plotter and set its style
-  s, err := plotter.NewScatter(randomPoints(50))
+  s, err := plotter.NewScatter(answer)
   if err != nil {
     panic(err)
   }
   s.GlyphStyle.Color = color.RGBA{R: 255, A: 255}
   
+  // Add data and legend
+  p.Add(s)
   p.Legend.Add("answer", s)
   
   // Save the plot to a PNG file.
