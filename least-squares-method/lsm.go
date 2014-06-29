@@ -36,7 +36,8 @@ func main() {
     pix[i] = math.Pi * answer[i].X
   }
   for i := 0; i < n; i++ {
-    answer[i].Y = math.Sin(pix[i]) / pix[i] + 0.1 * answer[i].X + 0.05 * (float64(n) * rand.Float64() + 1.0)
+    answer[i].Y = math.Sin(pix[i]) / pix[i] + 0.1 * answer[i].X
+    //answer[i].Y = math.Sin(pix[i]) / pix[i] + 0.1 * answer[i].X + 0.05 * (float64(n) * rand.Float64() + 1.0)
   }
 
   // Create a new plot, set its title and axis labels
@@ -64,7 +65,7 @@ func main() {
   p.Legend.Add("answer", lpLine, lpPoints)
   
   // Save the plot to a PNG file.
-  if err := p.Save(4, 4, "points.png"); err != nil {
+  if err := p.Save(4, 4, "points2.png"); err != nil {
     panic(err)
   }
 
