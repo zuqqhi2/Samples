@@ -10,6 +10,11 @@ import (
   //"fmt"
 )
 
+func normalRand(mu, sigma float64) float64 {
+  z := math.Sqrt(-2.0 * math.Log(rand.Float64())) * math.Sin(2.0 * math.Pi * rand.Float64())
+  return sigma*z + mu
+}
+
 func linspace(start, end float64, n int, x plotter.XYs) {
   for i := 0; i < n; i++ {
     t := float64(i) / float64(n-1)
@@ -36,8 +41,7 @@ func main() {
     pix[i] = math.Pi * answer[i].X
   }
   for i := 0; i < n; i++ {
-    answer[i].Y = math.Sin(pix[i]) / pix[i] + 0.1 * answer[i].X
-    //answer[i].Y = math.Sin(pix[i]) / pix[i] + 0.1 * answer[i].X + 0.05 * (float64(n) * rand.Float64() + 1.0)
+    answer[i].Y = math.Sin(pix[i]) / pix[i] + 0.1 * answer[i].X + normalRand(1.0, 0.05)
   }
 
   // Create a new plot, set its title and axis labels
@@ -61,11 +65,11 @@ func main() {
   lpPoints.Color = color.RGBA{R: 255, A: 255}
   
   // Add data and legend
-  p.Add(lpLine, lpPoints)
-  p.Legend.Add("answer", lpLine, lpPoints)
+  p.Add(lpPoints)
+  p.Legend.Add("answer", lpPoints)
   
   // Save the plot to a PNG file.
-  if err := p.Save(4, 4, "points2.png"); err != nil {
+  if err := p.Save(4, 4, "points3.png"); err != nil {
     panic(err)
   }
 
