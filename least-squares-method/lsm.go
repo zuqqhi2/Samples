@@ -22,20 +22,31 @@ func linspace(start, end float64, n int, x plotter.XYs) {
   }
 }
 
+/*
+func gaussElimination(mat [][]float64, height, width int) []float64 {
+  // Pivoting
+  for x := 0; x < width; x++ {
+    pivot := x
+
+    for y := x; y < height; y++ {
+      
+    }
+  }
+}
+*/
+
 func main() {
+  //===================================================
+  // Make observed points
+
   rand.Seed(int64(0))
 
-  // number of observed points
+  // Prepare X axis of observed points
   n := 50
   answer := make(plotter.XYs, n)
   linspace(-3, 3, n, answer)
 
-  // number of answer points
-  //N := 1000
-  //X := make([]float64, N)
-  //linspace(-3, 3, N, X)
-
-  // make answer function
+  // make observed points
   pix := make([]float64, n)
   for i := 0; i < n; i++ {
     pix[i] = math.Pi * answer[i].X
@@ -43,6 +54,50 @@ func main() {
   for i := 0; i < n; i++ {
     answer[i].Y = math.Sin(pix[i]) / pix[i] + 0.1 * answer[i].X + normalRand(1.0, 0.05)
   }
+
+  //====================================================
+  // LSM
+
+  // Prepare X axis of LSM result points
+  N := 1000
+  result := make(plotter.XYs, N)
+  linspace(-3, 3, N, result)
+
+  // Trigonometric Polynomial Basis Function for solving
+  numParams := 31
+  basisFunc := make([][]float64, n, n)
+  for y := 0; y < n; y++ {
+    basisFunc[y] = make([]float64, numParams, numParams)
+    for x := 0; x <= (numParams-1)/2; x++ {
+      if x == 0 {
+        basisFunc[y][x] = 1.0
+      } else {
+        basisFunc[y][2*x-1] = math.Sin(float64(x)/2.0 * answer[y].X)
+        basisFunc[y][2*x]   = math.Cos(float64(x)/2.0 * answer[y].X)
+      }
+    }
+  }
+
+  /*
+  // Make Normal Equation
+  equation := make([][]float64, numParams, numParams)
+  for y := 0; y < numParams; y++ {
+    equation[y] = make([]float64, numParams+1, numParams+1)
+    for x := 0; x < numParams; x++ {
+      summation := 0.0
+      for k := 0; k < n; k++ {
+        summation += basisFunc[k][y] * basisFunc[y][k]
+      }
+      equation[y][x] = summation
+    }
+  }
+
+  // Solve y=phi*theta
+  //theta := gaussElimination(gaussMat)
+  */
+
+  //====================================================
+  // Graph Setting
 
   // Create a new plot, set its title and axis labels
   p, err := plot.New()
@@ -69,15 +124,12 @@ func main() {
   p.Legend.Add("answer", lpPoints)
   
   // Save the plot to a PNG file.
-  if err := p.Save(4, 4, "points3.png"); err != nil {
+  if err := p.Save(4, 4, "points.png"); err != nil {
     panic(err)
   }
 
 
   /*
-  
-  
-
         // Get some random points
         rand.Seed(int64(0))
         n := 15
