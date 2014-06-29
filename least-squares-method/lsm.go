@@ -1,14 +1,73 @@
 package main
 
 import (
-        "code.google.com/p/plotinum/plot"
-        "code.google.com/p/plotinum/plotter"
-        "code.google.com/p/plotinum/vg"
-        "image/color"
-        "math/rand"
+  "code.google.com/p/plotinum/plot"
+  "code.google.com/p/plotinum/plotter"
+  //"code.google.com/p/plotinum/vg"
+  "image/color"
+  "math/rand"
+  "math"
 )
 
+func linspace(start, end float64, n int, x plotter.XYs) {
+  for i := 0; i < n; i++ {
+    t := float64(i) / float64(n-1)
+    x[i].X = (1.0 - t) * start + t * end 
+  }
+}
+
 func main() {
+  rand.Seed(int64(0))
+
+  // number of observed points
+  n := 50
+  answer := make(plotter.XYs, n)
+  linspace(-3, 3, n, answer)
+
+  // number of answer points
+  //N := 1000
+  //X := make([]float64, N)
+  //linspace(-3, 3, N, X)
+
+  // make answer function
+  pix := make([]float64, n)
+  for i := 0; i < n; i++ {
+    pix[i] = math.Pi * answer[i].X
+  }
+  for i := 0; i < n; i++ {
+    answer[i].Y = math.Sin(pix[i]) / pix[i] + 0.1 * answer[i].X + 0.05 * (float64(n) * rand.Float64() + 1.0)
+  }
+
+  // Create a new plot, set its title and axis labels
+  p, err := plot.New()
+  if err != nil {
+    panic(err)
+  }
+
+  p.Title.Text = "Least Square Method"
+  p.X.Label.Text = "X"
+  p.Y.Label.Text = "Y"
+  p.Add(plotter.NewGrid())
+
+  // Make a scatter plotter and set its style
+  s, err := plotter.NewScatter(answer)
+  if err != nil {
+    panic(err)
+  }
+  s.GlyphStyle.Color = color.RGBA{R: 255, B: 128, A: 255}
+  
+  p.Legend.Add("answer", s)
+  
+  // Save the plot to a PNG file.
+  if err := p.Save(4, 4, "points2.png"); err != nil {
+    panic(err)
+  }
+
+
+  /*
+  
+  
+
         // Get some random points
         rand.Seed(int64(0))
         n := 15
@@ -64,8 +123,10 @@ func main() {
         if err := p.Save(4, 4, "points2.png"); err != nil {
                 panic(err)
         }
+  */
 }
 
+/*
 // randomPoints returns some random x, y points.
 func randomPoints(n int) plotter.XYs {
         pts := make(plotter.XYs, n)
@@ -79,3 +140,4 @@ func randomPoints(n int) plotter.XYs {
         }
         return pts
 }
+*/
