@@ -51,11 +51,11 @@ func main() {
   p.Add(plotter.NewGrid())
 
   // Make a scatter plotter and set its style
-  s, err := plotter.NewScatter(answer)
+  s, err := plotter.NewScatter(randomPoints(50))
   if err != nil {
     panic(err)
   }
-  s.GlyphStyle.Color = color.RGBA{R: 255}
+  s.GlyphStyle.Color = color.RGBA{R: 255, A: 255}
   
   p.Legend.Add("answer", s)
   
@@ -127,7 +127,6 @@ func main() {
   */
 }
 
-/*
 // randomPoints returns some random x, y points.
 func randomPoints(n int) plotter.XYs {
         pts := make(plotter.XYs, n)
@@ -141,4 +140,3 @@ func randomPoints(n int) plotter.XYs {
         }
         return pts
 }
-*/
