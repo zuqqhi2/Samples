@@ -7,6 +7,7 @@ import (
   "image/color"
   "math/rand"
   "math"
+  "strconv"
   "fmt"
 )
 
@@ -100,7 +101,7 @@ func main() {
   // LSM
 
   // Make a matrix to solve
-  numParams := 10
+  numParams := 9
   mat := make([][]float64, numParams, numParams)
   fmt.Printf("[Matrix for Gausss Elimination]\n")
   for y := 0; y < numParams; y++ {
@@ -178,7 +179,8 @@ func main() {
   p.Legend.Add("Result", lpResultLine)
   
   // Save the plot to a PNG file.
-  if err := p.Save(4, 4, "lsm-polynomial2.png"); err != nil {
+  filename := "lsm-polynomial" + strconv.Itoa(numParams) + ".png"
+  if err := p.Save(4, 4, filename); err != nil {
     panic(err)
   }
 }
