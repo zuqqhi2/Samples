@@ -8,6 +8,7 @@ import (
   "math/rand"
   "math"
   "strconv"
+  "os"
   "fmt"
 )
 
@@ -79,6 +80,14 @@ func gaussElimination(mat [][]float64, numParams int) []float64 {
 
 func main() {
   //===================================================
+  // Check Command Line Arguments
+  
+  numParams, err := strconv.Atoi(os.Args[1])
+  if err != nil {
+    panic(err)
+  }
+
+  //===================================================
   // Make observed points
 
   rand.Seed(int64(0))
@@ -101,7 +110,6 @@ func main() {
   // LSM
 
   // Make a matrix to solve
-  numParams := 9
   mat := make([][]float64, numParams, numParams)
   fmt.Printf("[Matrix for Gausss Elimination]\n")
   for y := 0; y < numParams; y++ {
@@ -131,6 +139,19 @@ func main() {
   for i := 0; i < numParams; i++ {
     fmt.Printf("param %d : %f\n", i, params[i])
   }
+
+  // Calculation Error
+  sumError := 0.0
+  for i := 0; i < n; i++ {
+    y := 0.0
+    for k := 0; k < numParams; k++ {
+      y += params[k]*math.Pow(answer[i].X, float64(k))
+    }
+
+    sumError += math.Pow(answer[i].Y - y, 2.0)
+  }
+  fmt.Printf("\nRMS = %f\n", sumError)
+  
 
   //====================================================
   // Graph Setting
