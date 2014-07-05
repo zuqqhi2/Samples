@@ -150,7 +150,24 @@ func main() {
 
     sumError += math.Pow(answer[i].Y - y, 2.0)
   }
-  fmt.Printf("\nRMS = %f\n", sumError)
+  fmt.Printf("\nRMS(Training Data) = %f\n", sumError)
+  
+  sumError = 0.0
+  for i := 0; i < n; i++ {
+    // New Data
+    x := rand.Float64() * 6.0 - 3.0
+    ansY := math.Sin(math.Pi * x) / (math.Pi * x) + 0.1 * x + normalRand(1.0, 0.05)
+
+    // Estimation
+    y := 0.0
+    for k := 0; k < numParams; k++ {
+      y += params[k]*math.Pow(x, float64(k))
+    }
+
+    // Error
+    sumError += math.Pow(ansY - y, 2.0)
+  }
+  fmt.Printf("\nRMS(New Data)      = %f\n", sumError)
   
 
   //====================================================
