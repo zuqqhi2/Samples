@@ -26,7 +26,7 @@ func linspace(start, end float64, n int, x plotter.XYs) {
   }
 }
 
-// Elementary matrix
+// Elementary matrix with Gauss-Jordan Method
 func gaussElimination(mat [][]float64, numParams int) []float64 {
   // Pivoting
   for x := 0; x < numParams; x++ {
