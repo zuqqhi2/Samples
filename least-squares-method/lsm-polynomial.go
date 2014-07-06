@@ -12,11 +12,13 @@ import (
   "fmt"
 )
 
+// Make random value with normal distribution by Box-Muller Transform
 func normalRand(mu, sigma float64) float64 {
   z := math.Sqrt(-2.0 * math.Log(rand.Float64())) * math.Sin(2.0 * math.Pi * rand.Float64())
   return sigma*z + mu
 }
 
+// Make sequence of numbers with common difference
 func linspace(start, end float64, n int, x plotter.XYs) {
   for i := 0; i < n; i++ {
     t := float64(i) / float64(n-1)
@@ -24,7 +26,7 @@ func linspace(start, end float64, n int, x plotter.XYs) {
   }
 }
 
-
+// Elementary matrix
 func gaussElimination(mat [][]float64, numParams int) []float64 {
   // Pivoting
   for x := 0; x < numParams; x++ {
@@ -55,7 +57,6 @@ func gaussElimination(mat [][]float64, numParams int) []float64 {
     mat[k][k] = 1.0
     // Basic deformation
     for x := k+1; x < numParams+1; x++ { mat[k][x] /= diagElem  }
-    //
     for y := k+1; y < numParams; y++ {
       tmp := mat[y][k]
       for x := k+1; x < numParams+1; x++ {
@@ -150,7 +151,7 @@ func main() {
 
     sumError += math.Pow(answer[i].Y - y, 2.0)
   }
-  fmt.Printf("\nRMS(Training Data) = %f\n", sumError)
+  fmt.Printf("\nRSS(Training Data) = %f\n", sumError)
   
   sumError = 0.0
   for i := 0; i < n; i++ {
@@ -167,7 +168,7 @@ func main() {
     // Error
     sumError += math.Pow(ansY - y, 2.0)
   }
-  fmt.Printf("\nRMS(New Data)      = %f\n", sumError)
+  fmt.Printf("\nRSS(New Data)      = %f\n", sumError)
   
 
   //====================================================
