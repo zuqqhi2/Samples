@@ -1,13 +1,7 @@
-# test/sample.test.coffee
-should = (require 'chai').should()
+main   = require('../src/');
+assert = require('chai').assert
 
-describe 'String', ->
-  describe '#concat()', ->
-    it 'should return "John Doe"', ->
-      # assert values
-      'foo'.concat('bar').should.equal 'foobar'
+describe 'testing', ->
 
-  describe '#split()', ->
-    it 'should return [1,2,3]', ->
-      # assert arrays and objects
-      'foo,bar,baz'.split(',').should.deep.equal ['foo', 'bar', 'baz']
+  it 'is pretty nice with CoffeeScript', ->
+    assert main() == true
