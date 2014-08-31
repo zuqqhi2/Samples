@@ -1,0 +1,9 @@
+{
+  "name": "snapshot_test",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "4.8.7",
+    "ejs": "1.0.0",
+    "express-generator": "4.8.0"
+  }
+}
