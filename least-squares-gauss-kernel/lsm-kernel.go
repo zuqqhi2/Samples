@@ -150,7 +150,7 @@ func main() {
   p.Legend.Add("Result", lpResultLine)
   
   // Save the plot to a PNG file.
-  filename := "lsm-kernel" + strconv.Itoa(n) + ".png"
+  filename := "lsm-kernel1" + strconv.Itoa(n) + ".png"
   if err := p.Save(4, 4, filename); err != nil {
     panic(err)
   }
