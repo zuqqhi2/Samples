@@ -120,6 +120,7 @@ func main() {
   // Graph Setting
 
   // Make result data
+  /*
   N := 50
   result := make(plotter.XYs, N)
   linspace(-3, 3, N, result)
@@ -127,7 +128,7 @@ func main() {
   for i := 0; i < N; i++ {
     result[i].Y = t0[i]
   }
-  /*
+  */
   N := 1000
   result := make(plotter.XYs, N)
   linspace(-3, 3, N, result)
@@ -139,7 +140,6 @@ func main() {
       result[i].Y += kernel * t0[j]
     }
   }
-  */
 
   // Create a new plot, set its title and axis labels
   p, err := plot.New()
