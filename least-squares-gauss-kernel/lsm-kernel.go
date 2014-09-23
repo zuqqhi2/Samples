@@ -8,6 +8,7 @@ import (
   "math/rand"
   "math"
   "strconv"
+  "os"
   "fmt"
 )
 
@@ -27,6 +28,14 @@ func linspace(start, end float64, n int, x plotter.XYs) {
 
 
 func main() {
+  //===================================================
+  // Check Command Line Arguments
+  
+  numLearn, err := strconv.Atoi(os.Args[1])
+  if err != nil {
+    panic(err)
+  }
+
   //===================================================
   // Make observed points
 
@@ -49,14 +58,14 @@ func main() {
   //====================================================
   // LSM with Gauss Kernel Model
 
-  band_width := 0.3
+  band_width := 0.15
   step_size  := 0.1
   t0 := make([]float64, n);
   for i := 0; i < n; i++ {
     t0[i] = rand.Float64()
   }
 
-  for step := 0; step < n*10000; step++ {
+  for step := 0; step < numLearn; step++ {
     idx := rand.Intn(n)
     kernel := make([]float64, n)
     t := make([]float64, n)
@@ -100,10 +109,12 @@ func main() {
   }
   fmt.Printf("\nRSS(New Data)      = %f\n", sumError)
  
-
+  /*
   for i := 0; i < n; i++ {
-    fmt.Printf("t0[%d] = %f\n", i, t0[i])
+    kernel := math.Exp(-math.Pow(0.0 - answer[i].X, 2.0) / (2.0 * band_width * band_width))
+    fmt.Printf("kernel[%d] = %f\n", i, kernel)
   } 
+  */
 
   //====================================================
   // Graph Setting
@@ -163,7 +174,7 @@ func main() {
   p.Legend.Add("Result", lpResultLine)
   
   // Save the plot to a PNG file.
-  filename := "lsm-kernel3" + strconv.Itoa(n) + ".png"
+  filename := "lsm-kernel" + strconv.Itoa(numLearn) + ".png"
   if err := p.Save(4, 4, filename); err != nil {
     panic(err)
   }
