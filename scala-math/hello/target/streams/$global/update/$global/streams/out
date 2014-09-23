@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#hello_2.10;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#hello_2.10;1.0->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@681d354a[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@774d4142[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
@@ -104,7 +104,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-osx-x86_64/1.1/netlib-native_ref-osx-x86_64-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-osx-x86_64/1.1/netlib-native_ref-osx-x86_64-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-osx-x86_64/1.1/netlib-native_ref-osx-x86_64-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-osx-x86_64;1.1!netlib-native_ref-osx-x86_64.pom(pom.original) (820ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-osx-x86_64;1.1!netlib-native_ref-osx-x86_64.pom(pom.original) (736ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_ref;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_ref;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_ref;1.1[0m
@@ -125,7 +125,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/native_ref-java/1.1/native_ref-java-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/native_ref-java/1.1/native_ref-java-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/native_ref-java/1.1/native_ref-java-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#native_ref-java;1.1!native_ref-java.pom(pom.original) (784ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#native_ref-java;1.1!native_ref-java.pom(pom.original) (715ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_ref;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_ref;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_ref;1.1[0m
@@ -161,7 +161,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-x86_64/1.1/netlib-native_ref-linux-x86_64-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-x86_64/1.1/netlib-native_ref-linux-x86_64-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-x86_64/1.1/netlib-native_ref-linux-x86_64-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-linux-x86_64;1.1!netlib-native_ref-linux-x86_64.pom(pom.original) (851ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-linux-x86_64;1.1!netlib-native_ref-linux-x86_64.pom(pom.original) (721ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_ref-xbuilds;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_ref-xbuilds;1.1 {}[0m
 [0m[[0mdebug[0m] [0m		tried /home/hidetomo/.ivy2/local/com.github.fommil.netlib/native_ref-xbuilds/1.1/ivys/ivy.xml[0m
@@ -173,7 +173,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/native_ref-xbuilds/1.1/native_ref-xbuilds-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/native_ref-xbuilds/1.1/native_ref-xbuilds-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/native_ref-xbuilds/1.1/native_ref-xbuilds-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#native_ref-xbuilds;1.1!native_ref-xbuilds.pom(pom.original) (862ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#native_ref-xbuilds;1.1!native_ref-xbuilds.pom(pom.original) (727ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_ref;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_ref;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_ref;1.1[0m
@@ -203,7 +203,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-i686/1.1/netlib-native_ref-linux-i686-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-i686/1.1/netlib-native_ref-linux-i686-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-i686/1.1/netlib-native_ref-linux-i686-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-linux-i686;1.1!netlib-native_ref-linux-i686.pom(pom.original) (720ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-linux-i686;1.1!netlib-native_ref-linux-i686.pom(pom.original) (878ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_ref-xbuilds;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_ref-xbuilds;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_ref-xbuilds;1.1[0m
@@ -228,7 +228,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-win-x86_64/1.1/netlib-native_ref-win-x86_64-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-win-x86_64/1.1/netlib-native_ref-win-x86_64-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-win-x86_64/1.1/netlib-native_ref-win-x86_64-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-win-x86_64;1.1!netlib-native_ref-win-x86_64.pom(pom.original) (745ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-win-x86_64;1.1!netlib-native_ref-win-x86_64.pom(pom.original) (712ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_ref;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_ref;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_ref;1.1[0m
@@ -253,7 +253,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-win-i686/1.1/netlib-native_ref-win-i686-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-win-i686/1.1/netlib-native_ref-win-i686-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-win-i686/1.1/netlib-native_ref-win-i686-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-win-i686;1.1!netlib-native_ref-win-i686.pom(pom.original) (768ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-win-i686;1.1!netlib-native_ref-win-i686.pom(pom.original) (736ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_ref;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_ref;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_ref;1.1[0m
@@ -278,7 +278,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-armhf/1.1/netlib-native_ref-linux-armhf-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-armhf/1.1/netlib-native_ref-linux-armhf-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-armhf/1.1/netlib-native_ref-linux-armhf-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-linux-armhf;1.1!netlib-native_ref-linux-armhf.pom(pom.original) (782ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_ref-linux-armhf;1.1!netlib-native_ref-linux-armhf.pom(pom.original) (715ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_ref-xbuilds;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_ref-xbuilds;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_ref-xbuilds;1.1[0m
@@ -303,7 +303,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-osx-x86_64/1.1/netlib-native_system-osx-x86_64-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-osx-x86_64/1.1/netlib-native_system-osx-x86_64-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-osx-x86_64/1.1/netlib-native_system-osx-x86_64-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-osx-x86_64;1.1!netlib-native_system-osx-x86_64.pom(pom.original) (812ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-osx-x86_64;1.1!netlib-native_system-osx-x86_64.pom(pom.original) (736ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_system;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_system;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_system;1.1[0m
@@ -324,7 +324,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/native_system-java/1.1/native_system-java-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/native_system-java/1.1/native_system-java-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/native_system-java/1.1/native_system-java-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#native_system-java;1.1!native_system-java.pom(pom.original) (873ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#native_system-java;1.1!native_system-java.pom(pom.original) (723ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_system;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_system;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_system;1.1[0m
@@ -353,7 +353,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-x86_64/1.1/netlib-native_system-linux-x86_64-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-x86_64/1.1/netlib-native_system-linux-x86_64-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-x86_64/1.1/netlib-native_system-linux-x86_64-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-linux-x86_64;1.1!netlib-native_system-linux-x86_64.pom(pom.original) (727ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-linux-x86_64;1.1!netlib-native_system-linux-x86_64.pom(pom.original) (721ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_system-xbuilds;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_system-xbuilds;1.1 {}[0m
 [0m[[0mdebug[0m] [0m		tried /home/hidetomo/.ivy2/local/com.github.fommil.netlib/native_system-xbuilds/1.1/ivys/ivy.xml[0m
@@ -365,7 +365,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/native_system-xbuilds/1.1/native_system-xbuilds-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/native_system-xbuilds/1.1/native_system-xbuilds-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/native_system-xbuilds/1.1/native_system-xbuilds-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#native_system-xbuilds;1.1!native_system-xbuilds.pom(pom.original) (727ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#native_system-xbuilds;1.1!native_system-xbuilds.pom(pom.original) (722ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_system;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_system;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_system;1.1[0m
@@ -395,7 +395,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-i686/1.1/netlib-native_system-linux-i686-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-i686/1.1/netlib-native_system-linux-i686-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-i686/1.1/netlib-native_system-linux-i686-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-linux-i686;1.1!netlib-native_system-linux-i686.pom(pom.original) (711ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-linux-i686;1.1!netlib-native_system-linux-i686.pom(pom.original) (712ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_system-xbuilds;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_system-xbuilds;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_system-xbuilds;1.1[0m
@@ -420,7 +420,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-armhf/1.1/netlib-native_system-linux-armhf-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-armhf/1.1/netlib-native_system-linux-armhf-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-armhf/1.1/netlib-native_system-linux-armhf-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-linux-armhf;1.1!netlib-native_system-linux-armhf.pom(pom.original) (742ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-linux-armhf;1.1!netlib-native_system-linux-armhf.pom(pom.original) (711ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_system-xbuilds;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_system-xbuilds;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_system-xbuilds;1.1[0m
@@ -445,7 +445,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-win-x86_64/1.1/netlib-native_system-win-x86_64-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-win-x86_64/1.1/netlib-native_system-win-x86_64-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-win-x86_64/1.1/netlib-native_system-win-x86_64-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-win-x86_64;1.1!netlib-native_system-win-x86_64.pom(pom.original) (750ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-win-x86_64;1.1!netlib-native_system-win-x86_64.pom(pom.original) (724ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_system;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_system;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_system;1.1[0m
@@ -470,7 +470,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-win-i686/1.1/netlib-native_system-win-i686-1.1.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-win-i686/1.1/netlib-native_system-win-i686-1.1.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-win-i686/1.1/netlib-native_system-win-i686-1.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-win-i686;1.1!netlib-native_system-win-i686.pom(pom.original) (716ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.fommil.netlib#netlib-native_system-win-i686;1.1!netlib-native_system-win-i686.pom(pom.original) (719ms)[0m
 [0m[[0minfo[0m] [0mResolving com.github.fommil.netlib#native_system;1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.fommil.netlib#native_system;1.1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.fommil.netlib#native_system;1.1[0m
@@ -2282,7 +2282,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 27374ms :: artifacts dl 66ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 26373ms :: artifacts dl 91ms[0m
 [0m[[0mdebug[0m] [0m	report for default#hello_2.10;1.0 compile produced in /home/hidetomo/work/programming-tips/scala-math/hello/target/resolution-cache/reports/default-hello_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#hello_2.10;1.0 runtime produced in /home/hidetomo/work/programming-tips/scala-math/hello/target/resolution-cache/reports/default-hello_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#hello_2.10;1.0 test produced in /home/hidetomo/work/programming-tips/scala-math/hello/target/resolution-cache/reports/default-hello_2.10-test.xml[0m
@@ -2296,5 +2296,5 @@
 [0m[[0mdebug[0m] [0m	report for default#hello_2.10;1.0 docs produced in /home/hidetomo/work/programming-tips/scala-math/hello/target/resolution-cache/reports/default-hello_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#hello_2.10;1.0 pom produced in /home/hidetomo/work/programming-tips/scala-math/hello/target/resolution-cache/reports/default-hello_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#hello_2.10;1.0 scala-tool produced in /home/hidetomo/work/programming-tips/scala-math/hello/target/resolution-cache/reports/default-hello_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (27374ms resolve - 66ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (26373ms resolve - 91ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

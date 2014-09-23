@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20140907170450"/>
+		date="20140907183635"/>
 	<dependencies>
 		<module organisation="org.scalanlp" name="breeze_2.10">
 			<revision name="0.5.2" status="release" pubdate="20131023145316" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalanlp.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
@@ -137,7 +137,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_system-win-i686">
 			<revision name="1.1" status="release" pubdate="20131012074118" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="22">
-				<metadata-artifact status="successful" details="" size="5271" time="716" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-i686/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-i686/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-win-i686/1.1/netlib-native_system-win-i686-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="5271" time="719" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-i686/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-i686/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-win-i686/1.1/netlib-native_system-win-i686-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_system-win-i686" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="561459" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-i686/jars/netlib-native_system-win-i686-1.1-natives.jar">
@@ -148,7 +148,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_system-win-x86_64">
 			<revision name="1.1" status="release" pubdate="20131012074207" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="21">
-				<metadata-artifact status="successful" details="" size="5130" time="750" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-win-x86_64/1.1/netlib-native_system-win-x86_64-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="5130" time="724" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-win-x86_64/1.1/netlib-native_system-win-x86_64-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_system-win-x86_64" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="637428" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-win-x86_64/jars/netlib-native_system-win-x86_64-1.1-natives.jar">
@@ -159,7 +159,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_system-linux-armhf">
 			<revision name="1.1" status="release" pubdate="20131012083120" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="20">
-				<metadata-artifact status="successful" details="" size="4780" time="742" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-armhf/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-armhf/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-armhf/1.1/netlib-native_system-linux-armhf-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="4780" time="711" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-armhf/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-armhf/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-armhf/1.1/netlib-native_system-linux-armhf-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_system-linux-armhf" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="310891" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-armhf/jars/netlib-native_system-linux-armhf-1.1-natives.jar">
@@ -170,7 +170,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_system-linux-i686">
 			<revision name="1.1" status="release" pubdate="20131012083027" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="19">
-				<metadata-artifact status="successful" details="" size="4869" time="711" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-i686/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-i686/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-i686/1.1/netlib-native_system-linux-i686-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="4869" time="712" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-i686/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-i686/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-i686/1.1/netlib-native_system-linux-i686-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_system-linux-i686" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="435365" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-i686/jars/netlib-native_system-linux-i686-1.1-natives.jar">
@@ -181,7 +181,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_system-linux-x86_64">
 			<revision name="1.1" status="release" pubdate="20131012082927" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="18">
-				<metadata-artifact status="successful" details="" size="3930" time="727" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-x86_64/1.1/netlib-native_system-linux-x86_64-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="3930" time="721" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-linux-x86_64/1.1/netlib-native_system-linux-x86_64-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_system-linux-x86_64" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="458605" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-linux-x86_64/jars/netlib-native_system-linux-x86_64-1.1-natives.jar">
@@ -192,7 +192,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_system-osx-x86_64">
 			<revision name="1.1" status="release" pubdate="20131012074035" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="16">
-				<metadata-artifact status="successful" details="" size="3912" time="812" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-osx-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-osx-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-osx-x86_64/1.1/netlib-native_system-osx-x86_64-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="3912" time="736" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-osx-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-osx-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_system-osx-x86_64/1.1/netlib-native_system-osx-x86_64-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_system-osx-x86_64" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="553993" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_system-osx-x86_64/jars/netlib-native_system-osx-x86_64-1.1-natives.jar">
@@ -203,7 +203,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="native_system-java">
 			<revision name="1.1" status="release" pubdate="20131012073956" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="17">
-				<metadata-artifact status="successful" details="" size="3988" time="873" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/native_system-java/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/native_system-java/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/native_system-java/1.1/native_system-java-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="3988" time="723" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/native_system-java/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/native_system-java/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/native_system-java/1.1/native_system-java-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="netlib-native_system-linux-armhf" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1"/>
 				<caller organisation="com.github.fommil.netlib" name="netlib-native_system-linux-i686" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1"/>
 				<caller organisation="com.github.fommil.netlib" name="netlib-native_system-osx-x86_64" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1"/>
@@ -219,7 +219,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_ref-linux-armhf">
 			<revision name="1.1" status="release" pubdate="20131012081624" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="15">
-				<metadata-artifact status="successful" details="" size="3897" time="782" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-armhf/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-armhf/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-armhf/1.1/netlib-native_ref-linux-armhf-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="3897" time="715" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-armhf/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-armhf/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-armhf/1.1/netlib-native_ref-linux-armhf-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_ref-linux-armhf" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="1208080" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-armhf/jars/netlib-native_ref-linux-armhf-1.1-natives.jar">
@@ -230,7 +230,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_ref-win-i686">
 			<revision name="1.1" status="release" pubdate="20131012073716" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="14">
-				<metadata-artifact status="successful" details="" size="4471" time="768" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-i686/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-i686/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-win-i686/1.1/netlib-native_ref-win-i686-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="4471" time="736" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-i686/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-i686/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-win-i686/1.1/netlib-native_ref-win-i686-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_ref-win-i686" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="1826785" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-i686/jars/netlib-native_ref-win-i686-1.1-natives.jar">
@@ -241,7 +241,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_ref-win-x86_64">
 			<revision name="1.1" status="release" pubdate="20131012073904" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="13">
-				<metadata-artifact status="successful" details="" size="4378" time="745" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-win-x86_64/1.1/netlib-native_ref-win-x86_64-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="4378" time="712" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-win-x86_64/1.1/netlib-native_ref-win-x86_64-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_ref-win-x86_64" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="2305169" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-win-x86_64/jars/netlib-native_ref-win-x86_64-1.1-natives.jar">
@@ -252,7 +252,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_ref-linux-i686">
 			<revision name="1.1" status="release" pubdate="20131012081458" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="12">
-				<metadata-artifact status="successful" details="" size="3739" time="720" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-i686/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-i686/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-i686/1.1/netlib-native_ref-linux-i686-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="3739" time="878" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-i686/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-i686/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-i686/1.1/netlib-native_ref-linux-i686-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_ref-linux-i686" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="1489507" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-i686/jars/netlib-native_ref-linux-i686-1.1-natives.jar">
@@ -263,7 +263,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_ref-linux-x86_64">
 			<revision name="1.1" status="release" pubdate="20131012081310" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="11">
-				<metadata-artifact status="successful" details="" size="3309" time="851" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-x86_64/1.1/netlib-native_ref-linux-x86_64-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="3309" time="721" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-linux-x86_64/1.1/netlib-native_ref-linux-x86_64-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_ref-linux-x86_64" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="1749371" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-linux-x86_64/jars/netlib-native_ref-linux-x86_64-1.1-natives.jar">
@@ -274,7 +274,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="netlib-native_ref-osx-x86_64">
 			<revision name="1.1" status="release" pubdate="20131012073537" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="8">
-				<metadata-artifact status="successful" details="" size="3620" time="820" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-osx-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-osx-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-osx-x86_64/1.1/netlib-native_ref-osx-x86_64-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="3620" time="736" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-osx-x86_64/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-osx-x86_64/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/netlib-native_ref-osx-x86_64/1.1/netlib-native_ref-osx-x86_64-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="all" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1.1"/>
 				<artifacts>
 					<artifact name="netlib-native_ref-osx-x86_64" type="jar" ext="jar" extra-classifier="natives" status="no" details="" size="1839499" time="0" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/netlib-native_ref-osx-x86_64/jars/netlib-native_ref-osx-x86_64-1.1-natives.jar">
@@ -285,7 +285,7 @@
 		</module>
 		<module organisation="com.github.fommil.netlib" name="native_ref-java">
 			<revision name="1.1" status="release" pubdate="20131012073421" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="9">
-				<metadata-artifact status="successful" details="" size="3973" time="784" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/native_ref-java/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/native_ref-java/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/native_ref-java/1.1/native_ref-java-1.1.pom"/>
+				<metadata-artifact status="successful" details="" size="3973" time="715" location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/native_ref-java/ivy-1.1.xml" searched="true" original-local-location="/home/hidetomo/.ivy2/cache/com.github.fommil.netlib/native_ref-java/ivy-1.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/fommil/netlib/native_ref-java/1.1/native_ref-java-1.1.pom"/>
 				<caller organisation="com.github.fommil.netlib" name="netlib-native_ref-linux-armhf" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1"/>
 				<caller organisation="com.github.fommil.netlib" name="netlib-native_ref-linux-x86_64" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1"/>
 				<caller organisation="com.github.fommil.netlib" name="netlib-native_ref-win-i686" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.1"/>
