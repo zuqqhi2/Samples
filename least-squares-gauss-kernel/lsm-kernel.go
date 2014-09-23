@@ -113,7 +113,7 @@ func main() {
     result[i].Y = 0.0
     for j := 0; j < n; j++ {
       kernel := math.Exp(-math.Pow(result[i].X - answer[j].X, 2.0) / (2.0 * band_width * band_width))
-      result[i].Y += kernel * t0[j] 
+      result[i].Y += kernel * t0[j] / 10.0
     }
   }
 
