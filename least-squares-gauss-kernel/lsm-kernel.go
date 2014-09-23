@@ -114,10 +114,7 @@ func main() {
   linspace(-3, 3, N, result)
   
   for i := 0; i < N; i++ {
-    result[i].Y = 0.0
-    for j := 0; j < n; j++ {
-      result[i].Y += t0[j]
-    }
+    result[i].Y = t0[i]
   }
   /*
   N := 1000
