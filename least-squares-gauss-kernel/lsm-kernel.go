@@ -56,7 +56,7 @@ func main() {
     t0[i] = rand.Float64()
   }
 
-  for step := 0; step < n*1000; step++ {
+  for step := 0; step < n*10000; step++ {
     idx := rand.Intn(n)
     kernel := make([]float64, n)
     t := make([]float64, n)
@@ -113,7 +113,7 @@ func main() {
     result[i].Y = 0.0
     for j := 0; j < n; j++ {
       kernel := math.Exp(-math.Pow(result[i].X - answer[j].X, 2.0) / (2.0 * band_width * band_width))
-      result[i].Y += kernel * t0[j] / 10.0
+      result[i].Y += kernel * t0[j]
     }
   }
 
