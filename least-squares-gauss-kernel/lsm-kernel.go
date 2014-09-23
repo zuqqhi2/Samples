@@ -100,15 +100,8 @@ func main() {
     // Estimation
     y := 0.0
     kernel := make([]float64, n)
-    max := 0.0
     for k := 0; k < n; k++ {
       kernel[k] = math.Exp(-math.Pow(x - answer[k].X, 2.0) / (2.0 * band_width * band_width))
-      if max < kernel[k] {
-        max = kernel[k]
-      }
-    }
-    for k := 0; k < n; k++ {
-      kernel[k] = kernel[k]/max
       y += kernel[k] * t0[k] 
     }
 
@@ -144,15 +137,8 @@ func main() {
   for i := 0; i < N; i++ {
     result[i].Y = 0.0
     kernel := make([]float64, n)
-    max := 0.0
     for j := 0; j < n; j++ {
       kernel[j] = math.Exp(-math.Pow(result[i].X - answer[j].X, 2.0) / (2.0 * band_width * band_width))
-      if max < kernel[j] {
-        max = kernel[j]
-      }
-    }
-    for j := 0; j < n; j++ {
-      kernel[j] = kernel[j]/max
       result[i].Y += kernel[j] * t0[j]
     }
   }
