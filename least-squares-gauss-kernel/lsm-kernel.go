@@ -99,12 +99,27 @@ func main() {
     sumError += math.Pow(ansY - y, 2.0)
   }
   fmt.Printf("\nRSS(New Data)      = %f\n", sumError)
-  
+ 
+
+  for i := 0; i < n; i++ {
+    fmt.Printf("t0[%d] = %f\n", i, t0[i])
+  } 
 
   //====================================================
   // Graph Setting
 
   // Make result data
+  N := 50
+  result := make(plotter.XYs, N)
+  linspace(-3, 3, N, result)
+  
+  for i := 0; i < N; i++ {
+    result[i].Y = 0.0
+    for j := 0; j < n; j++ {
+      result[i].Y += t0[j]
+    }
+  }
+  /*
   N := 1000
   result := make(plotter.XYs, N)
   linspace(-3, 3, N, result)
@@ -116,6 +131,7 @@ func main() {
       result[i].Y += kernel * t0[j]
     }
   }
+  */
 
   // Create a new plot, set its title and axis labels
   p, err := plot.New()
@@ -150,7 +166,7 @@ func main() {
   p.Legend.Add("Result", lpResultLine)
   
   // Save the plot to a PNG file.
-  filename := "lsm-kernel1" + strconv.Itoa(n) + ".png"
+  filename := "lsm-kernel3" + strconv.Itoa(n) + ".png"
   if err := p.Save(4, 4, filename); err != nil {
     panic(err)
   }
