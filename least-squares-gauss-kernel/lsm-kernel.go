@@ -112,7 +112,7 @@ func main() {
   for i := 0; i < N; i++ {
     result[i].Y = 0.0
     for j := 0; j < n; j++ {
-      kernel := math.Exp(-(result[i].X - answer[j].X) * (result[i].X - answer[j].X) / (2.0 * band_width * band_width))
+      kernel := math.Exp(-math.Pow(result[i].X - answer[j].X, 2.0) / (2.0 * band_width * band_width))
       result[i].Y += kernel * t0[j] 
     }
   }
